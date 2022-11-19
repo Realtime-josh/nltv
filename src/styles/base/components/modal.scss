@@ -1,0 +1,60 @@
+.modal{
+  color:#000000;
+  width:85%;
+  min-height:100%;
+  text-align: center;
+  overflow-y: scroll;
+};
+
+.ReactModalPortal>div{
+  opacity: 0;
+  // display: none;
+};
+
+.ReactModalPortal .ReactModal__Overlay{
+  text-align: center;
+  transition: opacity 200ms ease-in-out;
+};
+
+.ReactModalPortal .ReactModal__Overlay--after-open{
+  opacity: 1;
+};
+
+.ReactModalPortal .ReactModal__Overlay--before-close{
+  opacity: 0;
+};
+
+.sidebar_bscreen2 {
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex:1;
+    
+  display:-moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-flex:1;
+    
+  display:-o-box;
+  -o-box-orient:vertical;
+  -o-box-flex:1;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  display: flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  
+  width: 95%;
+  min-height: 100%;
+  background-color: #0F0F2C;
+};
+
+@media screen and (max-width: 960px){
+  .ReactModalPortal>div{
+    display: block;
+  };
+};
+
+
+

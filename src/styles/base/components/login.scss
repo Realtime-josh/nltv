@@ -1,0 +1,50 @@
+.login-div{
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex:1;
+      
+  display:-moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-flex:1;
+      
+  display:-o-box;
+  -o-box-orient:vertical;
+  -o-box-flex:1;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  display: flex;
+  display:-webkit-flex;
+  flex-direction: column;
+
+  width:100%;
+  min-height: 100%;
+  position:absolute;
+  left: 0%;
+  scroll-behavior: smooth;  
+  // font-family: 'EuclidCircularA-Regular';
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //   sans-serif;
+  font-family: 'Segoe UI'
+};
+
+.login-table-forgot{
+  width: 100%;
+};
+
+.login-table-forgot-td{
+  text-align: left;
+};
+
+.login-table-forgot-td2{
+  color: #54c954;
+  font-size: 14px;
+  opacity: .8;
+};
+
+.login-table-forgot-td2:hover{
+  color:#ccc0c0;
+};

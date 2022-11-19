@@ -1,0 +1,160 @@
+.modal{
+  color:#000000;
+  width:80%;
+  height:100%;
+
+  text-align: center;
+  overflow-y: scroll;
+};
+
+
+.ReactModalPortal>div{
+  opacity: 0;
+};
+
+.ReactModalPortal .ReactModal__Overlay{
+  text-align: center;
+  transition: opacity 200ms ease-in-out;
+ 
+};
+
+.ReactModalPortal .ReactModal__Overlay--after-open{
+  opacity: 1;
+};
+
+.ReactModalPortal .ReactModal__Overlay--before-close{
+  opacity: 0;
+};
+
+.join-group{
+  color:#000000;
+  width:100%;
+  padding-top: 3%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  background: rgb(187, 180, 180);
+  top:0;
+};
+
+.join-group-inner{
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex:1;
+    
+  display:-moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-flex:1;
+    
+  display:-o-box;
+  -o-box-orient:vertical;
+  -o-box-flex:1;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  display: flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top:10%;
+  height: 40rem;
+  background: #000000;
+  color:#ffffff;
+};
+
+.join-group-form{
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex:1;
+    
+  display:-moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-flex:1;
+    
+  display:-o-box;
+  -o-box-orient:vertical;
+  -o-box-flex:1;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+ 
+  display: flex;
+  display:-webkit-flex;
+  text-align: center;
+  align-items: center;
+  width:70%;
+  height: 70%;
+  background: #fff;
+  color:#000000;
+};
+
+.join-group-input{
+  display:-webkit-box;
+  -webkit-box-flex:1;
+    
+  display:-moz-box;
+  -moz-box-flex:1;
+    
+  display:-o-box;
+  -o-box-flex:1;
+
+  display: -ms-flexbox;
+
+  border-style: none;
+  width:86%;
+  padding:1rem;
+  background: #fff;
+  border: 1px solid rgb(235, 231, 231);
+  color:#000;
+  border-radius: 14px;
+  margin-bottom: 3rem;
+  font-family: SourceSansPro;
+  font-size: medium;
+  font-stretch: semi-expanded;
+};
+
+.join-group-submit{
+  width:90%;
+  padding:1.5rem;
+  border-style: none;
+  background:green;
+  color:#ffffff;
+  border-radius: 14px;
+};
+
+.join-group-form-table{
+  width:90%;
+  margin-top:3%;
+};
+
+.jpft-td{
+  text-align: left;
+  font-weight: 500;
+};
+
+.jpft-td2{
+  text-align: right;
+};
+
+.cat-lab{
+  text-align: left;
+  width:90%;
+  margin-top:4%;
+  font-size: 0.98rem;
+};
+
+.join-group-submit:hover{
+  opacity: .7;
+};
+
+.add-genre-close:hover{
+  opacity:.7;
+ 
+};

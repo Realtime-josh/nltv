@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+};
+
+@font-face {
+  font-family: 'EuclidCircularA-Regular';
+  src: local('EuclidCircularA-Regular'), url(./fonts/EuclidCircularA-Regular.ttf) format('tff');
+};
+
+@font-face {
+  font-family: 'EuclidCircularA-Bold';
+  src: local('EuclidCircularA-Bold'), url(./fonts/EuclidCircularA-Bold.ttf) format('tff');
+};
+
+@font-face {
+  font-family: 'EuclidCircularA-BoldItalic';
+  src: local('EuclidCircularA-Bold'), url(./fonts/EuclidCircularA-BoldItalic.ttf) format('tff');
+};
+
+code {
+  font-family: 'EuclidCircularA-Regular';
+};
+
+

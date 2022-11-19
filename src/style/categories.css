@@ -1,0 +1,101 @@
+.cat_actions_div{
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex:1;
+    
+  display:-moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-flex:1;
+    
+  display:-o-box;
+  -o-box-orient:vertical;
+  -o-box-flex:1;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  display: flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  width:100%;
+};
+
+.cat_actions_table{
+  width:95%;
+  margin-left: 3%;
+};
+
+.cat_table_header{
+  width:20%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.9rem;
+  padding-left: 0.9rem;
+  text-align:left;
+  background:rgb(236, 235, 235);
+  font-weight: 540;
+};
+
+.cat_table_data{
+  padding-top: 0.5rem;
+  padding-bottom: 0.9rem;
+  padding-left: 0.9rem;
+  text-align:left;
+  font-weight: 540;
+};
+
+.cth{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+};
+
+.cth2{
+  width:100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-right: 3rem;
+};
+
+.cth3{
+  padding-top: 0.5rem;
+  padding-bottom: 0.9rem;
+  padding-left: 0.9rem;
+  padding-right: 3rem;
+  text-align: right;
+};
+
+.profile_photoo{
+  width:2rem;
+};
+
+#Categories
+.categories_button{
+  background: green;
+  color: #fff;
+  width: 6rem;
+  padding: 0.78rem;
+  border-style: none;
+  border-radius: 8px;
+  font-size: 0.5rem;
+};
+
+.categories_button:hover{
+  opacity: .8;
+}
+
+.categories_button_img{
+  width: 0.5rem;
+};
+
+.add_new{
+  width:15%;
+  text-align: left;
+};
+
+.searchiconimggg{
+  width:20%;
+};
+
+.profile_photoo{
+  border-radius: 50%;
+};
