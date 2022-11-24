@@ -14,6 +14,7 @@ import AddSeriesModal from './Products/AddSeries';
 import AddSeasonModal from './Products/AddSeason';
 import AddEpisodeModal from './Products/AddEpisode';
 import AddSectionModal from './Products/AddSection';
+import AddSectionBoard from './Products/SectionBoard';
 import SmallScreen from './ModalMenu/SmallScreen';
 
 
@@ -47,6 +48,7 @@ class ProductPage extends React.Component{
           {true && <AddEpisodeModal />}
           {true && <UpdateProductModal />}
           {true && <AddSectionModal />}
+          {true && <AddSectionBoard />}
           <div className='product_page'>
             {menuState && <SmallScreen />}
             <ProductSideBar />

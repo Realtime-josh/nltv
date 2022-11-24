@@ -19,12 +19,109 @@
 
 .movies-list:hover{
   opacity: .7;
+};
+
+.section-board-group{
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex:1;
+    
+  display:-moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-flex:1;
+    
+  display:-o-box;
+  -o-box-orient:vertical;
+  -o-box-flex:1;
+
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  display: flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  // text-align: center;
+  // align-items: center;
+  // justify-content: center;
+  width: 100%;
+  min-height: 60rem;
+  margin-top:2rem;
+  padding-bottom: 2rem;
+  background: #000000;
+};
+
+.secGroups{
+  margin: 1rem;
+  background: white;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all .2s linear;
+  padding-bottom: 0.43em;
+  text-align: center;
+  height: 19rem;
+  width:30%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+};
+
+
+.sectionAction{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5%;
+  right: 5%;
+  width:16px;
+};
+
+.sectionAction2{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5%;
+  right: 14%;
+  width:16px;
+};
+
+
+hr{
+  opacity: .1;
+};
+
+.sectab{
+  margin-left: 3%;
+  background: #ffffff;
 }
 
 
-@media screen and (max-width: 600px) {
-  .movies-list {
-    flex: 1 1 calc(10% - 2rem);
+
+@media screen and (max-width: 1600px) {
+  .secGroups {
+    flex: 1 1 calc(30% - 2rem);
+  };
+
+};
+
+@media screen and (max-width: 1000px) {
+  .secGroups {
+    flex: 1 1 calc(40% - 2rem);
+  };
+
+};
+
+@media screen and (max-width: 648px) {
+  .secGroups {
+    flex: 1 1 calc(80% - 2rem);
+  };
+
+};
+
+
+
+@media screen and (max-width: 350px) {
+  .secGroups {
+    flex: 1 1 calc(90% - 2rem);
   };
 
 };

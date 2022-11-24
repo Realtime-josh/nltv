@@ -1,6 +1,7 @@
 const defaultState = {
   sectionState: false,
   sectionStateTwo: false,
+  sectionBoardState: false,
   sectionMovies: [],
   sectionid: '',
   sectDeleteValue: '',
@@ -18,6 +19,11 @@ const SectionReducer = (state = defaultState, action) => {
       return {
         ...state,
         sectionStateTwo: action.sectionStateTwo,
+      };
+    case 'SET_SECTION_BOARD_STATE':
+      return {
+        ...state,
+        sectionBoardState: action.sectionBoardState,
       };
     case 'SET_SECTION_MOVIES':
       return {

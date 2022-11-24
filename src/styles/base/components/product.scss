@@ -557,6 +557,7 @@
   padding-bottom: 0.43em;
   text-align: left;
   height: 19rem;
+  width:30%;
 };
 
 .groups:hover {
@@ -663,7 +664,7 @@
 
 @media screen and (max-width: 1600px) {
   .groups {
-    flex: 1 1 calc(20% - 2rem);
+    flex: 1 1 calc(30% - 2rem);
   };
 
 };
@@ -729,9 +730,9 @@
 };
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 648px) {
   .groups {
-    flex: 1 1 calc(50% - 2rem);
+    flex: 1 1 calc(80% - 2rem);
   };
 
 };
@@ -747,7 +748,7 @@
 
 @media screen and (max-width: 350px) {
   .groups {
-    flex: 1 1 calc(70% - 2rem);
+    flex: 1 1 calc(90% - 2rem);
   };
 
 };

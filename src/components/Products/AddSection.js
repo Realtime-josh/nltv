@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Modal from 'react-modal';
-import {setSectionStatus, setSectionResponse,} from '../../actions/section';
-import { addSection, } from '../../actions/section';
+import {setSectionStatus, setSectionResponse, addSection, setSectionBoardStatus,} from '../../actions/section';
 import close from '../../images/close.png';
+import settings from '../../images/icons/settings.png';
 
 
 const AddSection = (props) => {
@@ -76,6 +76,12 @@ const AddSection = (props) => {
                     title='remove item nltv'  alt='remove item nltv' /> */}
                     </Fragment>) : ''}
                 </div>
+                <p className='cat-lab'>
+                  
+                </p>
+                <img onClick={() => {
+                  dispatch(setSectionBoardStatus(true));
+                }} src={settings} title='nltv' alt='nltv' />
                 <p className='cat-lab'>
                   Section Name*
                 </p>

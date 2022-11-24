@@ -20,6 +20,13 @@ export const setSectionStatusTwo = (sectionStateTwo) => (
   }
 );
 
+export const setSectionBoardStatus = (sectionBoardState) => (
+  {
+    type: 'SET_SECTION_BOARD_STATE',
+    sectionBoardState
+  }
+);
+
 export const setSectionMovies = (sectionMovies) => (
   {
     type: 'SET_SECTION_MOVIES',
