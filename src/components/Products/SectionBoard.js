@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Modal from 'react-modal';
 import {setSectionStatus, setSectionBoardStatus,} from '../../actions/section';
-// import close from '../../images/close.png';
+import Loader from '../Loader/Loader';
+import close from '../../images/icons/close.png';
 import update from '../../images/icons/updated.png';
 import deleteSect from '../../images/icons/deleter.png';
 
@@ -10,11 +11,11 @@ import deleteSect from '../../images/icons/deleter.png';
 const SectionBoard = () => {
   
   const dispatch = useDispatch();
-  const { sectionBoardState, } = useSelector(state => state.sectionModal);
+  const { sectionBoardState, sectionMovies } = useSelector(state => state.sectionModal);
   const closeSectionState = () => {
     dispatch(setSectionBoardStatus(undefined));
     dispatch(setSectionStatus(undefined));
-  }
+  };
 
   return (
     <div className='join-group'>
@@ -25,62 +26,36 @@ const SectionBoard = () => {
         closeTimeoutMS={400}
         className='join-group-modal'>
         <div className='section-board-group'>
-          {/* <table className='join-group-form-table sectab'>
-            <tbody>
-              <tr>
-                <td className='jpft-td'>ADD SECTION</td>
-                <td className='jpft-td2'><img onClick={() => {
-                    
-                  }} className='add-genre-close' src={close} alt='new label tv' title='new label tv'/></td>
-              </tr>
-            </tbody>
-          </table> */}
+          <img onClick={() => {
+            dispatch(setSectionBoardStatus(undefined));
+            dispatch(setSectionStatus(undefined));      
+          }} className='add-sb-close' src={close} alt='new label tv' title='new label tv'/>
           <div className='film_board'>
-            <div className='secGroups'>
+            {/* <div className='secGroups'>
               <img className='sectionAction' src={deleteSect} alt='new label tv' title='new label tv' />
               <img className='sectionAction2' src={update} alt='new label tv' title='new label tv' />
               <h2>Trending</h2><hr />
               <h4>Cool</h4>
               <h4>Breeze</h4>
+            </div> */}
+            {sectionMovies.data && (sectionMovies.data).length > 0 ? (sectionMovies.data).map(res => (
+              <div key={`${res.name} ${res.createdAt} ${res._id}`} className='secGroups'>
+              <img key={`${res.name} ${res.createdAt} img1  ${res._id}`}  className='sectionAction' src={deleteSect} alt='new label tv' title='new label tv' />
+              <img   key={`${res.name} ${res.createdAt} img2  ${res._id}`}  className='sectionAction2' src={update} alt='new label tv' title='new label tv' />
+              <h2   key={`${res.name} ${res.createdAt}  ${res._id}`}>{res.name}</h2><hr />
+              <Fragment>
+                {(res.movies).map(movie => (
+                  <h4 key={`${res._id}`}>{movie.name}</h4>
+                ))}
+              </Fragment>
             </div>
-
-            <div className='secGroups'>
-              <img className='sectionAction' src={deleteSect} alt='new label tv' title='new label tv' />
-              <img className='sectionAction2' src={update} alt='new label tv' title='new label tv' />
-              <h2>Popular</h2><hr />
-              <h4>Cool</h4>
-              <h4>Breeze</h4>
-            </div>
-
-            <div className='secGroups'>
-              <img className='sectionAction' src={deleteSect} alt='new label tv' title='new label tv' />
-              <img className='sectionAction2' src={update} alt='new label tv' title='new label tv' />
-              <h2>Most Viewed</h2><hr />
-              <h4>Cool</h4>
-              <h4>Breeze</h4>
-            </div>
-
-            <div className='secGroups'>
-              <img className='sectionAction' src={deleteSect} alt='new label tv' title='new label tv' />
-              <img className='sectionAction2' src={update} alt='new label tv' title='new label tv' />
-              <h2>Most Viewed</h2><hr />
-              <h4>Cool</h4>
-              <h4>Breeze</h4>
-            </div>
-
-            <div className='secGroups'>
-              <img className='sectionAction' src={deleteSect} alt='new label tv' title='new label tv' />
-              <img className='sectionAction2' src={update} alt='new label tv' title='new label tv' />
-              <h2>Most viewed</h2><hr />
-              <h4>Cool</h4>
-              <h4>Breeze</h4>
-            </div>
+            )) : <Loader />}
+            
           </div>
         </div>
       </Modal>
     </div>
-  )
-  
+  ) 
 };
 
 

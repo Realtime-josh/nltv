@@ -5,6 +5,7 @@ import {getToken, getUserDetails, getAuthState, } from '../helpers/auth';
 import {getProducts } from '../actions/product';
 import { getSeries } from '../actions/series';
 import { getCategories } from '../actions/category';
+import { getSections } from '../actions/section';
 import { setUser, setLoginState, } from '../actions/auth';
 import ProductSideBar from './Products/ProductSideBar';
 import DashBoardBody from './DashBoard/DashBoardBody';
@@ -23,6 +24,7 @@ class DashBoard extends React.Component{
       dispatch(getProducts());
       dispatch(getCategories());
       dispatch(getSeries());
+      dispatch(getSections());
     };
   };
   render(){

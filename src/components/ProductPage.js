@@ -5,6 +5,7 @@ import { setUser, setLoginState, } from '../actions/auth';
 import { getCategories } from '../actions/category';
 import {getProducts, setProductResponse } from '../actions/product';
 import { getSeries } from '../actions/series';
+import { getSections } from '../actions/section';
 import DeleteProduct  from './Products/DeleteProduct';
 import ProductSideBar from './Products/ProductSideBar';
 import ProductMainBody from './Products/ProductMainBody';
@@ -32,6 +33,7 @@ class ProductPage extends React.Component{
       dispatch(getCategories());
       dispatch(getProducts());
       dispatch(getSeries());
+      dispatch(getSections());
     };
   };
   render(){
