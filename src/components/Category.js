@@ -7,6 +7,7 @@ import CategoriesBody from './Categories/CategoriesBody';
 import CategoryModal from './Categories/AddCategory';
 import SmallScreen from './ModalMenu/SmallScreen';
 import AddSection from '../components/Products/AddSection';
+import AddSectionBoard from './Products/SectionBoard';
 
 
 class Categories extends React.Component{
@@ -27,6 +28,7 @@ class Categories extends React.Component{
     return (
       <Fragment>
         <AddSection />
+        {true && <AddSectionBoard />}
         {loginState === 'STATE_LOGGED_IN' ? (
           <Fragment>
             <Suspense>

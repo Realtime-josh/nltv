@@ -10,6 +10,8 @@ import { setUser, setLoginState, } from '../actions/auth';
 import ProductSideBar from './Products/ProductSideBar';
 import DashBoardBody from './DashBoard/DashBoardBody';
 import SmallScreen from './ModalMenu/SmallScreen';
+import AddSectionBoard from './Products/SectionBoard';
+
 
 
 class DashBoard extends React.Component{
@@ -33,6 +35,7 @@ class DashBoard extends React.Component{
     return (
       <Fragment>
         <AddSection />
+        {true && <AddSectionBoard />}
         {loginState === 'STATE_LOGGED_IN' ? (
           <div className='dashboard'>
             {menuState && <SmallScreen />}

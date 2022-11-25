@@ -7,6 +7,7 @@ import OrdersBody from './Orders/OrdersBody';
 import OrderModal from './Orders/AddOrders';
 import SmallScreen from './ModalMenu/SmallScreen';
 import AddSection from '../components/Products/AddSection';
+import AddSectionBoard from './Products/SectionBoard';
 
 
 class Orders extends React.Component{
@@ -27,6 +28,7 @@ class Orders extends React.Component{
     return (
       <Fragment>
         <AddSection />
+        {true && <AddSectionBoard />}
         { loginState === 'STATE_LOGGED_IN' ? (
           <Fragment>
             <Suspense fallback={<p>Loading...</p>}>

@@ -6,6 +6,7 @@ import GenreModal from './Genres/AddGenre';
 import Loader from '../components/Loader/Loader';
 import SmallScreen from './ModalMenu/SmallScreen';
 import AddSection from '../components/Products/AddSection';
+import AddSectionBoard from './Products/SectionBoard';
 
 const Genres = () => {
   const { genreState } = useSelector(state => state.genreModal)
@@ -16,6 +17,7 @@ const Genres = () => {
       {loginState === 'STATE_LOGGED_IN' ? (
         <Fragment>
           <AddSection />
+          {true && <AddSectionBoard />}
           <Suspense fallback={<Loader />}>
             {genreState && <GenreModal />}
           </Suspense>
