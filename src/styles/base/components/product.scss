@@ -255,6 +255,7 @@
   flex-direction: column;
 
   width:100%;
+  position: relative;
 };
 
 
@@ -523,7 +524,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 1.5%;
-  min-height: 60%;
+  // min-height: 75%;
+  margin-bottom: 8%;
 };
 
 .film_board_table{
@@ -595,9 +597,9 @@
 
   width:100%;
   height: 8%;
-  // position: sticky;
+  position: absolute;
   margin-top: 8%;
-  bottom: 0%;
+  bottom: 0;
 };
 
 .surf_table{
@@ -661,7 +663,6 @@
 
 
 
-
 @media screen and (max-width: 1600px) {
   .groups {
     flex: 1 1 calc(30% - 2rem);
@@ -691,6 +692,14 @@
 
   .product_text_table{
     margin-left: 12%;
+  };
+
+  .film_board{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5%;
+    min-height: none;
+    margin-bottom: 8%;
   };
   
 };
